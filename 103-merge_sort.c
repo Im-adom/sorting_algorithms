@@ -99,7 +99,7 @@ void split_data(int *array, int *buff, int min, int max, int size)
 	printf("[right]: ");
 
 	print_data(array, minR, maxR);
-	data_merge_sorted(array, buff, minL, maxL, minR, maxR);
+	data_merge(array, buff, minL, maxL, minR, maxR);
 	data_copy(array, buff, size);
 
 	printf("[Done]: ");
