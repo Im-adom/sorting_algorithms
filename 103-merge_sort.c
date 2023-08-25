@@ -16,7 +16,7 @@ void data_copy(int *src, int *dst, int size)
 		dst[i] = src[i];
 }
 /**
- * data_merge_sorted - merges two sets of sorted data in ascending order
+ * data_merge - merges two sets of sorted data in ascending order
  * @array: first set of data
  * @buff: second set of data
  * @minL: first lower range
@@ -24,7 +24,7 @@ void data_copy(int *src, int *dst, int size)
  * @minR: second lower range
  * @maxR: second upper range
  */
-void data_merge_sorted(int *array, int *buff, int minL, int maxL, int minR, int maxR)
+void data_merge(int *array, int *buff, int minL, int maxL, int minR, int maxR)
 {
 	int i = minL, j = minR, k = minL;
 
@@ -44,8 +44,8 @@ void data_merge_sorted(int *array, int *buff, int minL, int maxL, int minR, int 
 /**
  * print_data - prints an array in a given range
  * @array: array of data to be print
- * @r1: start of range
- * @r2: end of range
+ * @s1: start of range
+ * @s2: end of range
  */
 void print_data(int *array, int s1, int s2)
 {
